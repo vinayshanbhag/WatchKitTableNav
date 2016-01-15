@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchKitTableNav_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="mpb-FY-qzg">
+                            <items>
+                                <tableRow identifier="MyRowController" id="BSt-Oj-nqg" customClass="MyRowController" customModule="WatchKitTableNav_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="DWv-Te-4wf">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="qQa-G2-7rV"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="cityLabel" destination="qQa-G2-7rV" id="WSo-LC-EJZ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myTable" destination="mpb-FY-qzg" id="Djt-o4-IgN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="474" y="500"/>
+        </scene>
+        <!--DetailController-->
+        <scene sceneID="cdS-QJ-Dat">
+            <objects>
+                <controller identifier="DetailController" id="OfG-oS-kW7" customClass="DetailController" customModule="WatchKitTableNav_WatchKit_Extension">
+                    <items>
+                        <imageView width="1" height="1" alignment="center" verticalAlignment="center" id="YQm-0O-XL1"/>
+                    </items>
+                    <connections>
+                        <outlet property="photo" destination="YQm-0O-XL1" id="Mo7-Hp-ua2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="676" y="627"/>
+        </scene>
+    </scenes>
+</document>
