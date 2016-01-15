@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Bangalore.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Bangalore.jpg",
       "scale" : "2x"
     },
     {

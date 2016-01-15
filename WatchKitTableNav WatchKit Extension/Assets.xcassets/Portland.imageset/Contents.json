@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Portland.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Portland.jpg",
       "scale" : "2x"
     },
     {
